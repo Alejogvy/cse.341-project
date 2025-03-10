@@ -4,7 +4,7 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.use('/', require('./routes/index')); // Asegúrate de que la ruta es correcta
+app.use('/', require('./routes/index'));
 
 mongodb.initDb((err) => {
     if(err) {
